@@ -1,0 +1,69 @@
+User-agent: *
+Allow: /
+
+# Block admin and booking backend paths
+Disallow: /admin/
+Disallow: /api/
+Disallow: /booking/confirm/
+Disallow: /booking/payment/
+Disallow: /checkin/
+Disallow: /manage-booking/
+Disallow: /user/
+Disallow: /login/
+Disallow: /register/
+Disallow: /cart/
+Disallow: /checkout/
+Disallow: /pnr/
+Disallow: /?pnr=
+Disallow: /?session=
+Disallow: /tmp/
+Disallow: /test/
+Disallow: /dev/
+
+# Allow important crawlable pages
+Allow: /
+Allow: /destinations/
+Allow: /about/
+Allow: /contact/
+Allow: /timetable/
+Allow: /baggage-policy/
+Allow: /terms/
+Allow: /who-we-are/
+
+# Sitemap
+Sitemap: https://www.aerolinkuganda.com/sitemap.xml
+
+# Crawl delay (be polite)
+Crawl-delay: 10
+
+# Google
+User-agent: Googlebot
+Allow: /
+Disallow: /admin/
+Disallow: /api/
+Disallow: /booking/payment/
+Disallow: /pnr/
+Crawl-delay: 5
+
+# Bing
+User-agent: Bingbot
+Allow: /
+Disallow: /admin/
+Disallow: /api/
+Crawl-delay: 10
+
+# Block known bad bots
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: BLEXBot
+Disallow: /
